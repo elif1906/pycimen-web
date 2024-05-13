@@ -19,7 +19,7 @@ export default function Docs() {
                 <li><span className="italic text-blue-300">float</span> - Floating-point numbers</li>
                 <li><span className="italic text-blue-300">string</span> - String literals</li>
                 <li><span className="italic text-blue-300">boolean</span> - True and False</li>
-                <li><span className="italic text-blue-300">None</span> - Equivalent to Python's None</li>
+                <li><span className="italic text-blue-300">None</span> - Equivalent to Python&apos;s None</li>
             </ul>
         </section>
         
