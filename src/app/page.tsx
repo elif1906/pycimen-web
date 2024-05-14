@@ -12,7 +12,7 @@ export default function Home() {
         </div>
       </div>
       <section id="more" className="px-12 py-12">
-        <p className="text-xl "> Python interpreter implemented in C++ offers developers a versatile and extensible tool for executing Python code. This approach fosters deeper understanding of the language's inner workings and encourages contributions to the open-source Python ecosystem.</p>
+        <p className="text-xl "> Python interpreter implemented in C++ offers developers a versatile and extensible tool for executing Python code. This approach fosters deeper understanding of the language&apos;s inner workings and encourages contributions to the open-source Python ecosystem.</p>
         <h2 className="py-8 text-2xl font-bold">Project Overview</h2>
         <p className="text-xl "> The Python Interpreter project aims to develop a fully functional interpreter for the Python programming language from scratch, using C++ as the implementation language. This project serves as an impressive demonstration of technical expertise and deep understanding of both Python and C++.</p>
         <p className=" py-8 text-2xl font-bold "> This project delves into the heart of Python by crafting a custom interpreter built in C++.</p>
@@ -20,8 +20,8 @@ export default function Home() {
                 <li className="py-2"><b>Language Parsing:</b> The interpreter includes a robust parser capable of parsing Python source code and generating an abstract syntax tree (AST) representation.</li>
                 <li className="py-2"><b>Lexical Analysis:</b> A comprehensive lexer/tokenizer module is implemented to break down the input source code into tokens, facilitating the subsequent parsing and interpretation stages.</li>
                 <li className="py-2"><b>Semantic Analysis:</b> The interpreter performs semantic analysis on the parsed AST to detect and report any language-specific errors, such as undeclared variables or type mismatches.</li>
-                <li className="py-2"><b>Execution Engine:</b> A powerful execution engine is designed to execute the parsed Python code, implementing the language's semantics and executing statements, expressions, and control flow constructs.</li>
-                <li className="py-2"><b>Standard Library Support:</b> Efforts are made to provide support for a subset of Python's standard library modules, enabling the interpreter to execute a wide range of Python programs.</li>
+                <li className="py-2"><b>Execution Engine:</b> A powerful execution engine is designed to execute the parsed Python code, implementing the language&apos;s semantics and executing statements, expressions, and control flow constructs.</li>
+                <li className="py-2"><b>Standard Library Support:</b> Efforts are made to provide support for a subset of Python&apos;s standard library modules, enabling the interpreter to execute a wide range of Python programs.</li>
                 
             </ul>
         <p className="py-8 text-2xl font-bold "> Why This Project Matters </p>
