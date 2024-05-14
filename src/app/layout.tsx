@@ -25,8 +25,8 @@ export default function RootLayout({
             </div>
             <div className="flex gap-20 justify-end pt-8 pr-12">
               <Link className="text-black text-xl" href="/">Home</Link>
-              <Link className="text-black text-xl" href="/docs">Docs</Link>
-              <Link className="text-black text-xl" href="/installation">Installation</Link>
+              <Link className="text-black text-xl" target="_blank" href="/docs.pdf">Docs</Link>
+              <Link className="text-black text-xl" target="_blank" href="https://github.com/elif1906/Pycimen/releases/tag/v1.0.0">Installation</Link>
               <Link className="text-black text-xl" href="https://github.com/elif1906/pycimen.git"><Image width={30} height={30} src="/github.jpeg" alt="PyCimen"></Image></Link>
             </div>
             
