@@ -19,20 +19,19 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div className="flex gap-8 justify-between items-center w-screen">
-            <div>
-              {/* { <Image width={100} height={100} src="/pycimen-logo.jpeg" alt="PyCimen"></Image> } */}
+        <div className="flex gap-8 justify-between w-screen bg-white">
+            <div className="pl-8 py-2">
+              <Image width={100} height={100} src="/pycimen-logo.jpeg" alt="PyCimen"></Image>
             </div>
-            <div className="flex gap-8 justify-center items-center py-8">
-              <Link href="/">Home</Link>
-              <Link href="/docs">Docs</Link>
-              <Link href="/installation">Installation</Link>
-            </div>
-            <div> 
+            <div className="flex gap-20 justify-end pt-8 pr-12">
+              <Link className="text-black text-xl" href="/">Home</Link>
+              <Link className="text-black text-xl" href="/docs">Docs</Link>
+              <Link className="text-black text-xl" href="/installation">Installation</Link>
+              <Link className="text-black text-xl" href="https://github.com/elif1906/pycimen.git"><Image width={30} height={30} src="/github.jpeg" alt="PyCimen"></Image></Link>
             </div>
             
         </div>
-          <main className="w-full">{children}</main>
+        <main className="w-full">{children}</main>
       </body>
     </html>
   );
