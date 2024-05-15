@@ -43,7 +43,7 @@ const Home = () => {
       </div>
       <section id="more" className="px-4 md:px-20 py-8 md:py-12 flex-grow">
         <p className="text-lg md:text-xl">
-          Python interpreter implemented in C++ offers developers a versatile and extensible tool for executing Python code. This approach fosters deeper understanding of the language's inner workings and encourages contributions to the open-source Python ecosystem.
+          Python interpreter implemented in C++ offers developers a versatile and extensible tool for executing Python code. This approach fosters deeper understanding of the language&apos;s inner workings and encourages contributions to the open-source Python ecosystem.
         </p>
         <h2 className="py-4 md:py-8 text-xl md:text-2xl font-bold">Project Overview</h2>
         <p className="text-lg md:text-xl">
@@ -56,8 +56,8 @@ const Home = () => {
           <li className="py-2"><b>Semantic Analysis:</b> The interpreter performs semantic analysis on the parsed AST to detect and report any
 
  language-specific errors, such as undeclared variables or type mismatches.</li>
-          <li className="py-2"><b>Execution Engine:</b> A powerful execution engine is designed to execute the parsed Python code, implementing the language's semantics and executing statements, expressions, and control flow constructs.</li>
-          <li className="py-2"><b>Standard Library Support:</b> Efforts are made to provide support for a subset of Python's standard library modules, enabling the interpreter to execute a wide range of Python programs.</li>
+          <li className="py-2"><b>Execution Engine:</b> A powerful execution engine is designed to execute the parsed Python code, implementing the language&apos;s semantics and executing statements, expressions, and control flow constructs.</li>
+          <li className="py-2"><b>Standard Library Support:</b> Efforts are made to provide support for a subset of Python&apos;s standard library modules, enabling the interpreter to execute a wide range of Python programs.</li>
         </ul>
         <p className="py-4 md:py-8 text-xl md:text-2xl font-bold">Why This Project Matters</p>
         <ul className="pl-8 md:pl-12 list-disc">
