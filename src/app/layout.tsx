@@ -26,6 +26,7 @@ export default function RootLayout({
           <div className="flex flex-wrap justify-center md:justify-end md:gap-20 gap-4 pt-2 pb-4 md:pt-10 md:pr-14">
             <Link style={{ height: "fit-content" }} className="text-black text-sm md:text-xl hover:border-b-2 hover:border-green-700" href="/">Home</Link>
             <Link style={{ height: "fit-content" }} className="text-black text-sm md:text-xl hover:border-b-2 hover:border-green-700" target="_blank" href="/docs.pdf">Docs</Link>
+            <Link style={{ height: "fit-content" }} className="text-black text-sm md:text-xl hover:border-b-2 hover:border-green-700" target="_blank" href="https://marketplace.visualstudio.com/items?itemName=ElifNurCelepoglu.PyCimen-LSP">Pycimen-LSP</Link>
             <Link style={{ height: "fit-content" }} className="text-black text-sm md:text-xl hover:border-b-2 hover:border-green-700" target="_blank" href="https://github.com/elif1906/Pycimen/releases/tag/v1.0.0">Installation</Link>
             <Link style={{ height: "fit-content" }} className="text-black text-sm md:text-xl hover:border-b-2 hover:border-green-700 " target="_blank" href="https://github.com/elif1906/pycimen.git"><Image width={20} height={20} src="/github.jpeg" alt="PyCimen"></Image></Link>
             <Link style={{ height: "fit-content" }} className="text-black text-sm md:text-xl hover:border-b-2 hover:border-green-700 " target="_blank" href="https://www.linkedin.com/in/elif-nur-aslıhan-celepoğlu/"><Image width={20} height={20} src="/linkedin.png" alt="PyCimen"></Image></Link>
