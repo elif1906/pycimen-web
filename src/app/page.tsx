@@ -42,30 +42,39 @@ const Home = () => {
         </div>
       </div>
       <section id="more" className="px-4 md:px-20 py-8 md:py-12 flex-grow">
+      <h3 className="py-4 md:py-8 text-xl md:text-2xl font-bold text-green-600">Abstract
+      </h3>
         <p className="text-lg md:text-xl leading-relaxed">
-          Python interpreter implemented in C++ offers developers a versatile and extensible tool for executing Python code. This approach fosters a deeper understanding of the language&apos;s inner workings and encourages contributions to the open-source Python ecosystem.
-        </p>
-        <h2 className="py-4 md:py-8 text-2xl md:text-3xl font-bold text-green-600">Project Overview</h2>
+        This work explores the design and implementation of a new
+hybrid programming language called PyCimen, which com-
+bines the flexibility of Python with the performance-oriented
+nature of C++. This study aims to examine the core concepts
+of programming language design and implementation. It
+includes the construction of essential components such as
+the Lexer, Parser, and Abstract syntax tree (AST), offering
+Python-like syntax executed in a highly optimized and effi-
+cient C++ runtime. PyCimen’s minimalistic syntax enhances
+the ease and simplicity of the language. PyCimen provides
+a convenient developer experience with PyCimen-LSP fea-
+tures such as code completion, error checking, and syntax
+highlighting. It includes a package manager and an embed-
+ded Python interpreter, enabling direct import of Python
+modules installed with PIP, thus leveraging the rich Python
+module ecosystem. Language development requires lexical
+analysis, parsing, and evaluation. Consequently, this work aims to
+promote the design and implementation of programming lan-
+guages, supporting their creation by providing fundamental
+knowledge of language design concepts. It also demonstrates
+the feasibility of PyCimen combining the strengths of Python
+and C++ into a single integrated language. The addition of
+new features will make PyCimen a viable language option
+in various fields</p>
+        <h3 className="py-4 md:py-8 text-xl md:text-2xl font-bold text-green-600">PyCimen : A New Hybrid Programming Language</h3>
         <p className="text-lg md:text-xl leading-relaxed">
-          The Python Interpreter project aims to develop a fully functional interpreter for the Python programming language from scratch, using C++ as the implementation language. This project serves as an impressive demonstration of technical expertise and deep understanding of both Python and C++.
-        </p>
-        <h3 className="py-4 md:py-8 text-xl md:text-2xl font-bold text-green-600">Project Details</h3>
-        <p className="text-lg md:text-xl leading-relaxed">
-          This project delves into the heart of Python by crafting a custom interpreter built in C++.
-        </p>
-        <ul className="pl-8 md:pl-12 list-disc space-y-2 text-lg md:text-xl leading-relaxed">
-          <li><b>Language Parsing:</b> The interpreter includes a robust parser capable of parsing Python source code and generating an abstract syntax tree (AST) representation.</li>
-          <li><b>Lexical Analysis:</b> A comprehensive lexer/tokenizer module is implemented to break down the input source code into tokens, facilitating the subsequent parsing and interpretation stages.</li>
-          <li><b>Semantic Analysis:</b> The interpreter performs semantic analysis on the parsed AST to detect and report any language-specific errors, such as undeclared variables or type mismatches.</li>
-          <li><b>Execution Engine:</b> A powerful execution engine is designed to execute the parsed Python code, implementing the language&apos;s semantics and executing statements, expressions, and control flow constructs.</li>
-          <li><b>Standard Library Support:</b> Efforts are made to provide support for a subset of Python&apos;s standard library modules, enabling the interpreter to execute a wide range of Python programs.</li>
-        </ul>
-        <h3 className="py-4 md:py-8 text-xl md:text-2xl font-bold text-green-600">Why This Project Matters</h3>
-        <ul className="pl-8 md:pl-12 list-disc space-y-2 text-lg md:text-xl leading-relaxed">
-          <li><b>Become a Language Whisperer:</b> Crafting a Python interpreter from scratch equips you with an intimate understanding of programming languages, their design principles, and the intricate workings of compilers and interpreters. It showcases your prowess in tackling complex projects and makes you a valuable asset to potential employers and collaborators.</li>
-          <li><b>Technical Virtuosity:</b> This project offers a hands-on playground to hone your skills in language parsing, lexical analysis, semantic analysis, and execution engine design. These are highly sought-after skills in software development, particularly in areas like language design, compiler development, and performance optimization.</li>
-          <li><b>Level Up Your Curriculum:</b> Adding this project to your resume or portfolio is a bold declaration of your dedication to continuous learning and mastery of advanced programming concepts. It sets you apart from the crowd and signals your passion for exploring the intricacies of computer science.</li>
-        </ul>
+        This new hybrid programming language aims to strengthen the basic principles of programming languages by creating a custom interpreter for PyCimen. Remarkably, PyCimen seamlessly integrates Python's vast library ecosystem, enabling effortless use of powerful tools across a variety of domains. Additionally, inheriting the performance-oriented nature of C++, PyCimen ensures efficient execution, succeeding in data analysis tasks where speed and productivity are vital. Furthermore, we can benefit from the features of the C++ language while eliminating its difficulties with the help of PyCimen. This approach offers an easy way to gain a new perspective.Additionally, thanks to this, Python machine learning libraries can be used in C++, and AI integration can be done more easily compared to the existing C++ libraries.</p>
+
+
+
 </section>
 
     </div>
