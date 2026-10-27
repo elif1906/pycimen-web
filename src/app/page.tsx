@@ -53,7 +53,7 @@ async function getStats() {
   return [
     { value: "C++", label: "interpreter core" },
     lsp
-      ? { value: lsp.downloads.toLocaleString("en-US"), label: "PyCimen-LSP downloads" }
+      ? { value: lsp.installs.toLocaleString("en-US"), label: "PyCimen-LSP installs" }
       : { value: "pip", label: "module imports" },
     lsp
       ? { value: `${lsp.rating.toFixed(1)} ★`, label: "VS Code Marketplace rating" }

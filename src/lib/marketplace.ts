@@ -2,7 +2,7 @@ const EXTENSION_ID = "ElifNurCelepoglu.PyCimen-LSP";
 const ONE_DAY = 60 * 60 * 24;
 
 export type LspStats = {
-  downloads: number;
+  installs: number;
   rating: number;
 };
 
@@ -29,11 +29,12 @@ export async function getLspStats(): Promise<LspStats | null> {
     const stats: Statistic[] = data?.results?.[0]?.extensions?.[0]?.statistics ?? [];
     const get = (name: string) => stats.find((s) => s.statisticName === name)?.value;
 
-    const downloads = get("downloadCount");
+    // "install" is the unique-installs figure the Marketplace page shows; "downloadCount" also counts updates.
+    const installs = get("install");
     const rating = get("averagerating");
-    if (downloads === undefined || rating === undefined) return null;
+    if (installs === undefined || rating === undefined) return null;
 
-    return { downloads: Math.round(downloads), rating };
+    return { installs: Math.round(installs), rating };
   } catch {
     return null;
   }
