@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import HeroTerminal from "@/components/HeroTerminal";
 import CodeShowcase from "@/components/CodeShowcase";
+import { getLspStats } from "@/lib/marketplace";
 
 const features = [
   {
@@ -45,12 +46,21 @@ const pipeline = [
   { step: "Evaluator", detail: "C++ runtime" },
 ];
 
-const stats = [
-  { value: "C++", label: "interpreter core" },
-  { value: "15", label: "test suites" },
-  { value: "pip", label: "module imports" },
-  { value: "LSP", label: "editor support" },
-];
+export const revalidate = 86400;
+
+async function getStats() {
+  const lsp = await getLspStats();
+  return [
+    { value: "C++", label: "interpreter core" },
+    lsp
+      ? { value: lsp.downloads.toLocaleString("en-US"), label: "PyCimen-LSP downloads" }
+      : { value: "pip", label: "module imports" },
+    lsp
+      ? { value: `${lsp.rating.toFixed(1)} ★`, label: "VS Code Marketplace rating" }
+      : { value: "LSP", label: "editor support" },
+    { value: "15", label: "test suites" },
+  ];
+}
 
 const Icon = ({ d }: { d: string }) => (
   <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round" aria-hidden>
@@ -58,7 +68,9 @@ const Icon = ({ d }: { d: string }) => (
   </svg>
 );
 
-const Home = () => {
+const Home = async () => {
+  const stats = await getStats();
+
   return (
     <div className="relative">
       {/* Hero */}
@@ -127,7 +139,7 @@ const Home = () => {
         <div className="relative border-y border-white/5 bg-white/[0.02]">
           <div className="mx-auto grid max-w-7xl grid-cols-2 px-5 md:grid-cols-4 md:px-8">
             {stats.map((s, i) => (
-              <div key={s.label} className={`py-8 text-center ${i > 0 ? "md:border-l md:border-white/5" : ""} ${i % 2 ? "border-l border-white/5 md:border-l" : ""}`}>
+              <div key={i} className={`py-8 text-center ${i > 0 ? "md:border-l md:border-white/5" : ""} ${i % 2 ? "border-l border-white/5 md:border-l" : ""}`}>
                 <div className="text-gradient text-3xl font-bold md:text-4xl">{s.value}</div>
                 <div className="mt-1 text-sm text-white/50">{s.label}</div>
               </div>
